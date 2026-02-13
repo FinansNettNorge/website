@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                 Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f5f7fa;
+}
+
+a {
+    color: #0056a6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: #F5F5F5;
+    color: #333;
+    padding: 16px 0;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #D0D0D0;
+}
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.lang-toggle {
+    font-size: 1.05rem;
+    white-space: nowrap;
+}
+
+.lang-toggle a {
+    color: #666;
+    font-weight: 500;
+}
+
+.lang-toggle a:hover {
+    color: #2B7AB8;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    max-height: 51px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 100%;
+    width: auto;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+nav a {
+    color: #333;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+nav a:hover {
+    color: #2B7AB8;
+}
+
+main {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 24px;
+}
+
+.sidebar {
+    width: 180px;
+    flex-shrink: 0;
+}
+
+.sidebar:empty {
+    display: none;
+    width: 0;
+    gap: 0;
+}
+
+.sidebar-logo {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    padding: 12px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.sidebar-logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sidebar-nav {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    list-style: none;
+    overflow: hidden;
+}
+
+.sidebar-nav li {
+    border-bottom: 1px solid #e5ecf5;
+}
+
+.sidebar-nav li:last-child {
+    border-bottom: none;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 12px 16px;
+    color: #0056a6;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.sidebar-nav a:hover {
+    background-color: #f5f7fa;
+    text-decoration: none;
+}
+
+.content {
+    flex: 1;
+    min-width: 0;
+    max-width: 700px;
+}
+
+.hero {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 24px 24px 28px 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.hero-panel {
+    background-image: url('bg-panel.jpg');
+    background-size: auto;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    border-radius: 8px;
+    height: 315px;
+}
+
+.hero-panel .hero-content {
+    max-width: 50%;
+    background: transparent;
+    padding: 32px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-panel .hero-content h1 {
+    color: #ffffff;
+}
+
+.hero-panel .hero-content h2 {
+    color: #ffffff;
+}
+
+.hero-panel .hero-content p {
+    color: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+table thead {
+    background-color: #f0f3f8;
+}
+
+table th {
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #d3d9e3;
+    color: #0b2b4c;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #e5ecf5;
+}
+
+table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+table tbody tr:last-child td {
+    border-bottom: 2px solid #d3d9e3;
+    font-weight: 600;
+    background-color: #f5f7fa;
+}
+
+.hero h1 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: #0b2b4c;
+}
+
+.hero h2 {
+    font-size: 1.2rem;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    color: #384b63;
+    font-weight: 500;
+}
+
+.hero h3 {
+    font-size: 1.05rem;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    color: #384b63;
+    font-weight: 500;
+}
+
+.hero p {
+    margin-bottom: 10px;
+    font-size: 0.98rem;
+}
+
+footer {
+    border-top: 2px solid #D0D0D0;
+    padding: 16px 0;
+    margin-top: 24px;
+    font-size: 0.85rem;
+    color: #555;
+    background-color: #ffffff;
+}
+
+@media (max-width: 640px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.spaced {
+    margin-bottom: 24px;
+}

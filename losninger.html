@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Løsninger – FinansNettNorge AS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container header-inner">
+        <div class="logo"><img src="logo-fnn.png" alt="FNN Logo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Om FNN</a></li>
+                <li><a href="tjenester.html">Tjenester</a></li>
+                <li><a href="teknologi.html">Teknologi</a></li>
+                <li><a href="kontakt-oss.html">Kontakt oss</a></li>
+            </ul>
+        </nav>
+        <div class="lang-toggle">
+            <a href="index.html">Norsk</a> | <a href="english.html">English</a>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <aside class="sidebar">
+    </aside>
+
+    <section class="content hero">
+        <h1>Løsninger</h1>
+
+        <p><em>Hva kreves for å bruke de ulike tjenestene? De ulike kommunikasjonstjenestene som tilbys av FNN krever at brukeren har viss utstyr og forbindelser. For å si det enkelt, er det nødvendig med separat CPE for brukere som skal handle på markedsplasser ved bruk av MultiCast, som for eksempel Oslo Børs. Hvis det er behov for andre tjenesteleverandører eller andre former for kommunikasjonsløsninger, vennligst kontakt oss!</em></p>
+
+        <h2>Markedsplasser</h2>
+
+        <h3>Euronext – Oslo Børs</h3>
+        <p>Handelssystemer som Optiq bruker UDP Multicast til å sende handelsinformasjon. FNN håndterer dette ved hjelp av CPE der de ulike MultiCast-strømmene leveres til kunden via dedikerte porter. Millennium fastslår båndbreddelkrav og levering fra CPE til brukerens egen infrastruktur skjer normalt over Ethernet eller fiber. Kommunikasjon fra brukeren til nevnte handelssystemer skjer normalt via Transmission Control Protocol (TCP).</p>
+        <p>Oslo Børs sine andre handelssystemer, MFI, bruker kun TCP og normal ruting. All kommunikasjon med Oslo Børs via FNN krever godkjenning fra Oslo Børs. Kommunikasjon med Oslo Børs sine handelssystemer via FNN er inkludert i FNNs månedlige pris.</p>
+
+        <h3>NASDAQ Stockholm</h3>
+        <p>Kommunikasjon med NASDAQ-handelssystemer via FNN er for øyeblikket kun tilgjengelig via TCP, dvs. normal ruting. NASDAQ bruker også MultiCast, og FNN vil implementere dette hvis ønsket av NASDAQ.</p>
+        <p>FNN har etablert duplisert kommunikasjon med NASDAQOMX, 2 x 1000 Mbps. Kommunikasjon med Sverige må abonneres spesielt og linekostnaden deles mellom de som bruker tjenesten.</p>
+
+        <h3>Fidessa</h3>
+        <p>Fidessa har etablert dupliserte forbindelser fra sine datasentre i London til FNN i Oslo. All kommunikasjon er basert på standard TCP-ruting og kommunikasjon med Fidessa er inkludert i FNNs normale månedlige pris.</p>
+        <p>Bruken av Fidelssas tjenester må avtales direkte med Fidessa.</p>
+
+        <h2>Oppgjør/Clearing</h2>
+
+        <h3>Euronext Securities Oslo (VPS) og SIX x-clear</h3>
+        <p>Alle forbindelser bruker standard TCP-ruting og kommunikasjon via FNN med nevnte aktører er inkludert i den normale månedlige prisen.</p>
+
+        <h2>Informasjons- og handelstjenester</h2>
+
+        <p>Leverandørene InFront og InFront Finance er tilknyttet FNN. I tillegg er TietoEvry Sverige AB tilknyttet.</p>
+        <p>Disse leverandørene bruker standard TCP-ruting i sin kommunikasjon og løsninger for kommunikasjon med disse er inkludert i FNNs normale månedlige pris.</p>
+
+        <h2>Internettforbindelse</h2>
+
+        <p>Som ISP tilbyr GlobalConnect internettløsninger til FNN-kunder.</p>
+
+        <h2>Sikkerhetskopieringsløsninger</h2>
+
+        <p>FNN tilbyr også løsninger for kommunikasjon mellom en brukers operasjonslokasjon 1 og operasjonslokasjon 2. Denne tjenesten er primært ment for å støtte brukerens katastrofegjenopprettingsløsninger. Tjenesten er basert på bruk av WDM ved bruk av FNNs fiber og støtter for eksempel LAN2LAN-løsninger og løsninger basert på FiberChannel, som SAN og diskspeilering.</p>
+        <p>Begge operasjonslokasjonene må være tilknyttet FNN.</p>
+        <p>Vennligst kontakt oss hvis du ønsker ytterligere informasjon.</p>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>Copyright: FinansNettNorge AS</p>
+    </div>
+</footer>
+</body>
+</html>

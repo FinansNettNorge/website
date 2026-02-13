@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Tjenester – FinansNettNorge AS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container header-inner">
+        <div class="logo"><img src="logo-fnn.png" alt="FNN Logo"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Om FNN</a></li>
+                <li><a href="tjenester.html">Tjenester</a></li>
+                <li><a href="teknologi.html">Teknologi</a></li>
+                <li><a href="kontakt-oss.html">Kontakt oss</a></li>
+            </ul>
+        </nav>
+        <div class="lang-toggle">
+            <a href="index.html">Norsk</a> | <a href="english.html">English</a>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <aside class="sidebar">
+        <div class="sidebar-nav">
+            <h3>Handelssteder</h3>
+            <ul>
+                <li><a href="#euronext">Euronext</a></li>
+                <li><a href="#nasdaq">Nasdaq</a></li>
+            </ul>
+            
+            <h3>Oppgjør og Clearing</h3>
+            <ul>
+                <li><a href="#euronext-securities">Euronext Securities Oslo (CSD)</a></li>
+                <li><a href="#euronext-clearing">Euronext Clearing</a></li>
+                <li><a href="#six-xclear">SIX x-clear</a></li>
+            </ul>
+            
+            <h3>Tjenesteleverandører</h3>
+            <ul>
+                <li><a href="#fidessa">Fidessa</a></li>
+                <li><a href="#broadridge">Broadridge</a></li>
+                <li><a href="#infront">Infront</a></li>
+                <li><a href="#tieto">Tieto</a></li>
+                <li><a href="#vpnett">VPNett</a></li>
+                <li><a href="#globalconnect-sweden">GlobalConnect Sweden</a></li>
+            </ul>
+            
+            <h3>Skytjenester</h3>
+            <ul>
+                <li><a href="#aws">AWS</a></li>
+                <li><a href="#azure">Azure</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="content hero">
+        <h1>Tjenester</h1>
+
+        <p><em>FNN tilbyr omfattende tilkoblingsløsninger til norske investeringsselskaper og deres tjenesteleverandører, med dedikerte forbindelser til store handelssteder, oppgjørs- og clearingsystemer, og ledende tjenesteleverandører.</em></p>
+
+        <h2>Handelssteder</h2>
+
+        <h3 id="euronext">Euronext</h3>
+        <p>FNN tilbyr dedikerte forbindelser til Euronext for handel og markedsdatatjenester. FNN opprettholder separate leasede linjer til forskjellige datasentre i London for mangfold og redundans. FNN har gjennomført en Third Party Assessment (TPA) levert av Euronext, som bekrefter vår samsvar med Euronets tilkoblings- og driftsstandarder.</p>
+        <p>Handelssystemer støtter både UDP Multicast for markedsdatadistribusjon og TCP for ordreruting. FNN håndterer Multicast-strømmer gjennom Customer Premises Equipment (CPE) hvor flere Multicast-strømmer leveres til kunder via dedikerte porter. Ordreinnlevering til handelssystemer bruker Transmission Control Protocol (TCP), mens markedsdataleveringer bruker Multicast-kanaler.</p>
+
+        <h3 id="nasdaq">Nasdaq</h3>
+        <p>FNN opprettholder forbindelser til NASDAQ-handelssystemer som støtter både standard TCP-ruting og Multicast-protokoller. FNN har etablert dupliserte kommunikasjonsbaner som gir pålitelig tilkobling til nordiske markeder med høy tilgjengelighet og ytelse.</p>
+
+        <h2>Oppgjør og Clearing</h2>
+
+        <h3 id="euronext-securities">Euronext Securities Oslo (CSD)</h3>
+        <p>Euronext Securities Oslo (VPS - Verdipapirsentralen) er Norges verdipapirsentral. FNN tilbyr dedikerte forbindelser for å støtte oppgjørs- og depot operasjoner ved bruk av standard TCP-ruting.</p>
+        <p>Vår infrastruktur sikrer pålitelig og effektiv oppgjør av handler som gjennomføres på norske børser, med redundante banebaner for forretningskontinuitet.</p>
+
+        <h3 id="euronext-clearing">Euronext Clearing</h3>
+        <p>FNN har etablert infrastruktur og dedikerte forbindelser for å støtte Euronext Clearing, som tilbyr sentrale clearingtjenester for kontant- og derivatmarkeder på tvers av Europa. For å aktivere clearingtjenester må FNN-medlemmer abonnere på dette tilbudet. Når det er abonnert, bruker forbindelsene standard TCP-ruting med garantert oppgjør og redusert motpartsrisiko for alle clearede handler.</p>
+
+        <h3 id="six-xclear">SIX x-clear</h3>
+        <p>SIX x-clear er den sentrale motparten for nordisk verdipapirhandel. FNN har etablert dedikerte forbindelser for å støtte clearingoperasjoner på tvers av alle tilkoblede børser ved bruk av standard TCP-ruting med høy tilgjengelighet og ytelseskvalitet.</p>
+
+        <h2>Tjenesteleverandører</h2>
+
+        <h3 id="fidessa">Fidessa</h3>
+        <p>Fidessa har etablert dupliserte forbindelser fra sine datasentre i London til FNN i Oslo. Fidelssas plattform er bygget på Smart Order Routing Technology og gir avanserte handelsløsninger til norske markedsdeltakere. Kommunikasjon med Fidessa bruker standard TCP-ruting, og tjenestene må avtales direkte med Fidessa.</p>
+
+        <h3 id="broadridge">Broadridge</h3>
+        <p>Broadridge er tilknyttet FNN og tilbyr markedsdata, oppgjørs- og clearingtjenester, og etterhandelsløsninger til finansinstitusjoner. Broadridge-tjenestene bruker standard TCP-ruting for pålitelig dataspørring og smidig integrasjon med disse kritiske markedsinfrastrukturtjenestene.</p>
+
+        <h3 id="infront">Infront</h3>
+        <p>Infront (InFront Finance) er tilknyttet FNN for å tilby omfattende markedsdata og handelsterminaler til norske finansinstitusjoner. Infront-tjenestene støtter sanntidsmarkedsinformasjon og profesjonelle handelsverktøy via standard TCP-ruting.</p>
+
+        <h3 id="tieto">Tieto</h3>
+        <p>Tieto er tilknyttet FNN for å tilby en rekke IT- og finanstjenesteleveranser til norske markedsdeltakere. Tieto-infrastrukturen støtter kritiske finansielle operasjoner inkludert handel, oppgjør og markedsdatadistribusjon via standard TCP-ruting.</p>
+
+        <h3 id="vpnett">VPNett</h3>
+        <p>VPNett, drivet av GlobalConnect, tilbyr forbindelse til FNN via rutingsamkoblet infrastruktur. Denne løsningen muliggjør fleksibel nettverkstilkobling for norske finansinstitusjoner.</p>
+
+        <h3 id="globalconnect-sweden">GlobalConnect Sweden</h3>
+        <p>GlobalConnect Sweden er tilknyttet FNN for å tilby internett- og tilkoblingsløsninger til nordiske finansinstitusjoner. GlobalConnect Sweden spesialiserer seg i grensekryssende tilkobling og multi-region nettverkstjenester for finansbedrifter.</p>
+        <p>Tilkobling med GlobalConnect Sweden gjennom FNN muliggjør sømløs tilgang til svenske markeder og regional infrastruktur, og støtter integrert nordisk finansoperasjon med pålitelig og skalerbar tilkobling.</p>
+
+        <h2>Skytjenester</h2>
+
+        <h3 id="aws">AWS</h3>
+        <p>Forbindelser til Amazon Web Services (AWS) kan etableres gjennom FNN ved hjelp av GlobalConnect VPNett-infrastrukturen, som tilbyr kostnadseffektiv tilgang til skytjenester ved å bruke eksisterende rutere.</p>
+
+        <h3 id="azure">Azure</h3>
+        <p>Forbindelser til Microsoft Azure kan etableres gjennom FNN ved hjelp av GlobalConnect VPNett-infrastrukturen, som tilbyr kostnadseffektiv tilgang til skytjenester på bedriftsnivå ved å bruke eksisterende rutere.</p>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>Copyright: FinansNettNorge AS</p>
+    </div>
+</footer>
+</body>
+</html>

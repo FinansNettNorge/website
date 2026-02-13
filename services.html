@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Services – FinansNettNorge AS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container header-inner">
+        <div class="logo"><img src="logo-fnn.png" alt="FNN Logo"></div>
+        <nav>
+            <ul>
+                <li><a href="about-fnn.html">About FNN</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="contact-us.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="lang-toggle">
+            <a href="index.html">Norsk</a> | <a href="english.html">English</a>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <aside class="sidebar">
+        <div class="sidebar-nav">
+            <h3>Trading Venues</h3>
+            <ul>
+                <li><a href="#euronext">Euronext</a></li>
+                <li><a href="#nasdaq">Nasdaq</a></li>
+            </ul>
+            
+            <h3>Clearing and Settlement</h3>
+            <ul>
+                <li><a href="#euronext-securities">Euronext Securities Oslo (CSD)</a></li>
+                <li><a href="#euronext-clearing">Euronext Clearing</a></li>
+                <li><a href="#six-xclear">SIX x-clear</a></li>
+            </ul>
+            
+            <h3>Service Providers</h3>
+            <ul>
+                <li><a href="#fidessa">Fidessa</a></li>
+                <li><a href="#broadridge">Broadridge</a></li>
+                <li><a href="#infront">Infront</a></li>
+                <li><a href="#tieto">Tieto</a></li>
+                <li><a href="#vpnett">VPNett</a></li>
+                <li><a href="#globalconnect-sweden">GlobalConnect Sweden</a></li>
+            </ul>
+            
+            <h3>Cloud Services</h3>
+            <ul>
+                <li><a href="#aws">AWS</a></li>
+                <li><a href="#azure">Azure</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="content hero">
+        <h1>Services</h1>
+
+        <p><em>FNN provides comprehensive connectivity solutions to Norwegian investment firms and their service providers, with dedicated connections to major trading venues, clearing and settlement systems, and leading service providers.</em></p>
+
+        <h2>Trading Venues</h2>
+
+        <h3 id="euronext">Euronext</h3>
+        <p>FNN provides dedicated connections to Euronext for trading and market data services. FNN maintains separate leased lines to different datacenters in London for diversity and redundancy. FNN has completed a Third Party Assessment (TPA) provided by Euronext, confirming our compliance with Euronext's connectivity and operational standards.</p>
+        <p>Trading systems support both UDP Multicast for market data distribution and TCP for order routing. FNN handles Multicast flows through Customer Premises Equipment (CPE) where multiple Multicast streams are delivered to customers via dedicated ports. Order submission to trading systems uses Transmission Control Protocol (TCP), while market data delivery uses Multicast channels.</p>
+
+        <h3 id="nasdaq">Nasdaq</h3>
+        <p>FNN maintains connections to NASDAQ trading systems supporting both standard TCP routing and Multicast protocols. FNN has established duplicated communication pathways providing reliable connectivity to Nordic markets with high availability and performance.</p>
+
+        <h2>Clearing and Settlement</h2>
+
+        <h3 id="euronext-securities">Euronext Securities Oslo (CSD)</h3>
+        <p>Euronext Securities Oslo (VPS - Verdipapirsentralen) is the Norwegian Central Securities Depository. FNN provides dedicated connections to support settlement and custody operations using standard TCP routing.</p>
+        <p>Our infrastructure ensures reliable and efficient settlement of trades executed on Norwegian exchanges, with redundant pathways for business continuity.</p>
+
+        <h3 id="euronext-clearing">Euronext Clearing</h3>
+        <p>FNN has established infrastructure and dedicated connections to support Euronext Clearing, which provides central clearing services for cash and derivatives markets across Europe. To enable clearing services, FNN members must subscribe to this offering. Once subscribed, connections use standard TCP routing with guaranteed settlement and reduced counterparty risk for all cleared trades.</p>
+
+        <h3 id="six-xclear">SIX x-clear</h3>
+        <p>SIX x-clear is the central counterparty for Nordic securities trading. FNN has established dedicated connections to support clearing operations across all connected exchanges using standard TCP routing with high availability and performance characteristics.</p>
+
+        <h2>Service Providers</h2>
+
+        <h3 id="fidessa">Fidessa</h3>
+        <p>Fidessa has established duplicated connections from its data centres in London to FNN in Oslo. Fidessa's platform is built on Smart Order Routing Technology and provides advanced trading solutions to Norwegian market participants. Communication with Fidessa uses standard TCP routing, and services must be agreed upon directly with Fidessa.</p>
+
+        <h3 id="broadridge">Broadridge</h3>
+        <p>Broadridge is connected to FNN, providing market data, clearing and settlement services, and post-trade solutions to financial institutions. Broadridge's services use standard TCP routing for reliable data delivery and seamless integration with these critical market infrastructure services.</p>
+
+        <h3 id="infront">Infront</h3>
+        <p>Infront (InFront Finance) is connected to FNN to provide comprehensive market data and trading terminals to Norwegian financial enterprises. Infront's services support real-time market information and professional trading tools via standard TCP routing.</p>
+
+        <h3 id="tieto">Tieto</h3>
+        <p>Tieto is connected to FNN to provide a range of IT and financial services solutions to Norwegian market participants. Tieto's infrastructure supports critical financial operations including trading, settlement, and market data distribution via standard TCP routing.</p>
+
+        <h3 id="vpnett">VPNett</h3>
+        <p>VPNett, maintained by GlobalConnect, provides connection to FNN via routed interconnection. This solution enables flexible network connectivity for Norwegian financial institutions.</p>
+
+        <h3 id="globalconnect-sweden">GlobalConnect Sweden</h3>
+        <p>GlobalConnect Sweden is connected to FNN to provide internet and connectivity solutions to Nordic financial institutions. GlobalConnect Sweden specializes in cross-border connectivity and multi-region network services for financial enterprises.</p>
+        <p>Connectivity with GlobalConnect Sweden through FNN enables seamless access to Swedish markets and regional infrastructure, supporting integrated Nordic financial operations with reliable and scalable connectivity.</p>
+
+        <h2>Cloud Services</h2>
+
+        <h3 id="aws">AWS</h3>
+        <p>Connections to Amazon Web Services (AWS) can be established through FNN using the GlobalConnect VPNett infrastructure, providing cost-effective access to cloud services by leveraging existing routers.</p>
+
+        <h3 id="azure">Azure</h3>
+        <p>Connections to Microsoft Azure can be established through FNN using the GlobalConnect VPNett infrastructure, providing cost-effective access to enterprise cloud services by leveraging existing routers.</p>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>Copyright: FinansNettNorge AS</p>
+    </div>
+</footer>
+</body>
+</html>
