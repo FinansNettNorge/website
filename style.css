@@ -269,10 +269,258 @@ footer {
     background-color: #ffffff;
 }
 
-@media (max-width: 640px) {
+/* ========== TABLET & MOBILE RESPONSIVE DESIGN ========== */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
     .header-inner {
         flex-direction: column;
         align-items: flex-start;
+        gap: 12px;
+    }
+
+    header {
+        padding: 12px 0;
+        margin-bottom: 16px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    .lang-toggle {
+        font-size: 0.95rem;
+    }
+
+    .hero {
+        padding: 16px;
+    }
+
+    .hero h1 {
+        font-size: 1.4rem;
+    }
+
+    .hero h2 {
+        font-size: 1.05rem;
+        margin-top: 20px;
+    }
+
+    .hero h3 {
+        font-size: 0.95rem;
+        margin-top: 16px;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero-panel {
+        height: 250px;
+    }
+
+    .hero-panel .hero-content {
+        max-width: 100%;
+        padding: 16px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+
+    .sidebar-logo {
+        padding: 8px;
+        margin-bottom: 16px;
+    }
+
+    footer {
+        padding: 12px 0;
+        margin-top: 16px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile phones (640px and below) */
+@media (max-width: 640px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 96%;
+    }
+
+    header {
+        padding: 10px 0;
+        margin-bottom: 12px;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .logo {
+        max-height: 40px;
+        font-size: 1.1rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        display: block;
+        padding: 8px 0;
+    }
+
+    .lang-toggle {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .lang-toggle a {
+        display: inline;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar-logo {
+        padding: 6px;
+        margin-bottom: 12px;
+    }
+
+    .sidebar-logo img {
+        max-height: 35px;
+    }
+
+    .sidebar-nav a {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .content {
+        max-width: 100%;
+    }
+
+    .hero {
+        padding: 12px;
+        border-radius: 4px;
+    }
+
+    .hero h1 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    .hero h2 {
+        font-size: 1rem;
+        margin-top: 16px;
+        margin-bottom: 12px;
+    }
+
+    .hero h3 {
+        font-size: 0.9rem;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+
+    .hero p {
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .hero-panel {
+        height: 200px;
+        background-position: center;
+    }
+
+    .hero-panel .hero-content {
+        max-width: 100%;
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+
+    .hero-panel .hero-content h1 {
+        font-size: 1.1rem;
+    }
+
+    /* Table responsiveness */
+    table {
+        font-size: 0.8rem;
+        margin: 12px 0;
+    }
+
+    table th {
+        padding: 6px;
+        font-size: 0.75rem;
+    }
+
+    table td {
+        padding: 6px;
+    }
+
+    /* Make tables scrollable on mobile */
+    .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 12px 0;
+    }
+
+    footer {
+        padding: 10px 0;
+        margin-top: 12px;
+        font-size: 0.75rem;
+    }
+
+    .spaced {
+        margin-bottom: 16px;
     }
 }
 
