@@ -223,6 +223,15 @@ table td {
     border-bottom: 1px solid #e5ecf5;
 }
 
+/* Right-align numeric columns (columns 2-6: A shares, B shares, Total, Stake, Voting share) */
+table th:nth-child(n+2) {
+    text-align: right;
+}
+
+table td:nth-child(n+2) {
+    text-align: right;
+}
+
 table tbody tr:hover {
     background-color: #f9fafb;
 }
