@@ -4,12 +4,18 @@
     padding: 0;
 }
 
+html[lang="no"],
+html[lang="en"] {
+    font-size: 16px;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
                  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     line-height: 1.6;
     color: #222;
     background-color: #f5f7fa;
+    font-size: 16px;
 }
 
 a {
@@ -27,6 +33,9 @@ header {
     padding: 16px 0;
     margin-bottom: 24px;
     border-bottom: 2px solid #D0D0D0;
+    min-height: 51px;
+    display: flex;
+    align-items: center;
 }
 
 .container {
@@ -75,7 +84,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 16px;
 }
 
@@ -146,6 +155,46 @@ main {
 }
 
 .sidebar-nav a:hover {
+    background-color: #f5f7fa;
+    text-decoration: none;
+}
+
+.sidebar-nav h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 12px 16px;
+    margin: 0;
+    color: #0b2b4c;
+    border-bottom: 1px solid #e5ecf5;
+}
+
+.sidebar-nav h3:first-child {
+    border-top: none;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    border-bottom: 1px solid #e5ecf5;
+}
+
+.sidebar-nav li:last-child {
+    border-bottom: none;
+}
+
+.sidebar-nav li a {
+    display: block;
+    padding: 12px 16px;
+    color: #0056a6;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.sidebar-nav li a:hover {
     background-color: #f5f7fa;
     text-decoration: none;
 }
@@ -314,7 +363,7 @@ footer {
 
     nav ul {
         gap: 12px;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     nav a {
